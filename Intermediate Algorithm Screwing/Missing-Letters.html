@@ -1,0 +1,45 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<h> Missing Letters Ex. </h1>
+
+<p>Missing letters
+
+Find the missing letter in the passed letter range and return it.
+
+If all letters are present in the range, return undefined.
+
+Remember to use Read-Search-Ask if you get stuck. Try to pair program. Write your own code.
+
+Here are some helpful links:
+
+    String.prototype.charCodeAt()
+
+    String.fromCharCode()
+
+</p>
+
+<script>
+function fearNotLetter(str) {
+
+// cycle through the string
+for (var i =0; i<str.length ; i++)  {
+// check for the character code at each position
+var codeNum = str.charCodeAt(i);
+console.log(codeNum)
+//check for matching character
+//if code of the current character/letter is not equal to first character and the number of the iteation, the character is escaped or missing
+if (codeNum !== str.charCodeAt(0)+i) {
+  return String.fromCharCode(codeNum-1);
+}
+  //console.log(String.fromCharCode(begin))
+}
+  return undefined;
+}
+
+fearNotLetter("abce");
+
+</script>

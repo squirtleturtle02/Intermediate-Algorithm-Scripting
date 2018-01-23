@@ -4,8 +4,7 @@ function booWho(bool) {
   // What is the new fad diet for ghost developers? The Boolean.
 
 //check if it is a primitive boolean value
-  if(typeof booWho ==='boolean')
-  //if not return null
+return typeof bool === 'boolean';  //if not return null
 }
 
 booWho(null);
